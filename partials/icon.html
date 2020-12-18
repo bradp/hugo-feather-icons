@@ -1,0 +1,15 @@
+{{/*
+  icon
+  Will print the feather icon matching the string passed as "context"
+
+  @author @bradp
+
+  @context String (.)
+
+  @access public
+
+  @example - Go Template
+    {{ partial "feather-icons/icon" "anchor" }}
+*/}}
+
+<span class="feather">{{- $icon := resources.Get (print "feather-icons/icons/" . ".svg" ) -}}{{- $icon.Content | safeHTML -}}</span>

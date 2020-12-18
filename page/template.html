@@ -1,0 +1,30 @@
+{{ define "main" }}
+<style>
+ul.feather-icons-list {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+ul.feather-icons-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    fill: currentColor;
+}
+
+ul.feather-icons-list li:nth-child(odd) {
+    background-color: rgba(201, 194, 194, 0.982);
+}
+</style>
+<ul class="feather-icons-list">
+    {{ range resources.Match "feather-icons/icons/*.svg" }}
+    <li>
+        {{ replace .Name "feather-icons/icons/" "" }}
+        <span>
+            {{ .Content | safeHTML }}
+        </span>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}

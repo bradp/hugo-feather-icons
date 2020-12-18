@@ -1,0 +1,24 @@
+{
+	"name": "hugo-feather-icons",
+	"version": "1.0.0",
+	"description": "Hugo module to easily bring feather Icons into your project.",
+	"keywords": [
+		"hugo",
+		"icons",
+		"module",
+		"hugo-module",
+		"feather-icons"
+	],
+	"homepage": "https://github.com/bradp/hugo-feather-icons",
+	"bugs": "https://github.com/bradp/hugo-feather-icons/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bradp/hugo-feather-icons.git"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Brad Parbs",
+		"email": "brad@bradparbs.com",
+		"url": "https://bradparbs.com"
+	}
+}

@@ -1,0 +1,16 @@
+module:
+  hugoVersion:
+    min: '0.64.0'
+  mounts:
+    - source: page/index.md
+      target: content/feathericons.md
+      lang: en
+    - source: page/template.html
+      target: layouts/_default/feathericons.html
+    - source: partials
+      target: layouts/partials/feather
+  imports:
+    - path: github.com/feathericons/feather
+      mounts:
+      - source: icons
+        target: assets/feather-icons/icons
